@@ -1,0 +1,11 @@
+
+  <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="white"/>
+    <text x="400" y="300" font-family="Arial" font-size="32" text-anchor="middle" fill="black">
+      Slide 1 of 10
+    </text>
+    <text x="400" y="350" font-family="Arial" font-size="20" text-anchor="middle" fill="gray">
+      This is a placeholder for the actual slide image
+    </text>
+  </svg>
+  

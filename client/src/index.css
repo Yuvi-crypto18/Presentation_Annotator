@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 4% 16%;
+    --foreground: 210 40% 96%;
+    
+    --card: 240 8% 20%;
+    --card-foreground: 210 40% 96%;
+    
+    --popover: 240 8% 20%;
+    --popover-foreground: 210 40% 96%;
+    
+    --primary: 240 95% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 345 83% 60%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 240 5% 25%;
+    --muted-foreground: 217 19% 65%;
+    
+    --accent: 240 5% 25%;
+    --accent-foreground: 210 40% 96%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 240 5% 25%;
+    --input: 240 5% 25%;
+    --ring: 240 95% 65%;
+    
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 8% 18%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 240 95% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 25%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 240 5% 25%;
+    --sidebar-ring: 240 95% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-primary outline-offset-2;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-card;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-sm;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
